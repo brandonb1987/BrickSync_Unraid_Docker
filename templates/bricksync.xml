@@ -1,0 +1,113 @@
+<Container version="2">
+
+<Name>BrickSync</Name>
+
+<Repository>brandonb1987/unraid-bricksync:latest</Repository>
+
+<Registry>brandonb1987/unraid-bricksync</Registry>
+
+<Network>bridge</Network>
+
+<Shell>sh</Shell>
+
+<Privileged>false</Privileged>
+
+<Overview>
+BrickSync synchronizes inventory between BrickLink and BrickOwl. This container runs BrickSync on Debian Trixie and automatically retrieves the latest available BrickSync Linux release from the ZZJHONS BrickSync repository.
+</Overview>
+
+<Project>https://github.com/ZZJHONS/Bricksync</Project>
+
+<TemplateURL>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/templates/bricksync.xml</TemplateURL>
+
+<ReadMe>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/README.md</ReadMe>
+
+<Category>Tools:System</Category>
+
+<ExtraSearchTerms>BrickSync BrickLink BrickOwl inventory synchronization</ExtraSearchTerms>
+
+<Requires>Internet access</Requires>
+
+<MinVer>6.12</MinVer>
+
+<License>MIT</License>
+
+<!-- Persistent application data -->
+
+<Config
+  Name="Appdata"
+  Target="/opt/bricksync/data"
+  Default="/mnt/user/appdata/bricksync"
+  Mode="rw"
+  Description="Persistent BrickSync configuration and data."
+  Type="Path"
+  Display="always"
+  Required="true"
+  Mask="false">
+</Config>
+
+<!-- BrickLink credentials -->
+
+<Config
+  Name="BrickLink Consumer Key"
+  Target="BRICKLINK_CONSUMERKEY"
+  Default=""
+  Mode="1"
+  Description="BrickLink API Consumer Key."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="true">
+</Config>
+
+<Config
+  Name="BrickLink Consumer Secret"
+  Target="BRICKLINK_CONSUMERSECRET"
+  Default=""
+  Mode="1"
+  Description="BrickLink API Consumer Secret."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="true">
+</Config>
+
+<Config
+  Name="BrickLink Token"
+  Target="BRICKLINK_TOKEN"
+  Default=""
+  Mode="1"
+  Description="BrickLink API Token."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="true">
+</Config>
+
+<Config
+  Name="BrickLink Token Secret"
+  Target="BRICKLINK_TOKENSECRET"
+  Default=""
+  Mode="1"
+  Description="BrickLink API Token Secret."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="true">
+</Config>
+
+<!-- BrickOwl credentials -->
+
+<Config
+  Name="BrickOwl API Key"
+  Target="BRICKOWL_KEY"
+  Default=""
+  Mode="1"
+  Description="BrickOwl API Key."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="true">
+</Config>
+
+</Container>
