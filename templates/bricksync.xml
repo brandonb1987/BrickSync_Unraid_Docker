@@ -4,7 +4,7 @@
 
 <Repository>brandonb1987/unraid-bricksync:latest</Repository>
 
-<Registry>brandonb1987/unraid-bricksync</Registry>
+<Repository>brandonb1987/unraid-bricksync:latest</Repository>
 
 <Network>bridge</Network>
 
