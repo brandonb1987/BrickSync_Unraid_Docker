@@ -2,9 +2,7 @@
 
 <Name>BrickSync</Name>
 
-<Repository>brandonb1987/unraid-bricksync:latest</Repository>
-
-<Repository>brandonb1987/unraid-bricksync:latest</Repository>
+<Repository>https://hub.docker.com/repository/docker/brandonb1987/unraid-bricksync</Repository>
 
 <Network>bridge</Network>
 
