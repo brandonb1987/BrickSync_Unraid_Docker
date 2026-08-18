@@ -4,6 +4,8 @@
 
 <Repository>https://hub.docker.com/repository/docker/brandonb1987/unraid-bricksync</Repository>
 
+<Icon>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/icon.svg</Icon>
+  
 <Network>bridge</Network>
 
 <Shell>sh</Shell>
