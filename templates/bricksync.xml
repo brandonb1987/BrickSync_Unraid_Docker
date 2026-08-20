@@ -2,7 +2,7 @@
 
 <Name>BrickSync</Name>
 
-<Repository>https://hub.docker.com/r/brandonb1987/unraid-bricksync</Repository>
+<Repository>brandonb1987/unraid-bricksync:latest</Repository>
 
 <Icon>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/icon.svg</Icon>
   
