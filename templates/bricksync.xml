@@ -19,8 +19,6 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
 
 <TemplateURL>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/templates/bricksync.xml</TemplateURL>
 
-<ReadMe>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/README.md</ReadMe>
-
 <Category>Tools:System</Category>
 
 <ExtraSearchTerms>BrickSync BrickLink BrickOwl inventory synchronization</ExtraSearchTerms>
