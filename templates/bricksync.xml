@@ -13,8 +13,7 @@
 <Privileged>false</Privileged>
   
 <Overview>
-BrickSync synchronizes inventory between BrickLink and BrickOwl. This container runs BrickSync on Debian Trixie and automatically retrieves the latest available BrickSync Linux release from the ZZJHONS BrickSync repository.
-</Overview>
+BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
 
 <Project>https://github.com/ZZJHONS/Bricksync</Project>
 
