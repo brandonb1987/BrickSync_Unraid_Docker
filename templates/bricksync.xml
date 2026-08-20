@@ -1,4 +1,4 @@
-<Container version="2">
+<Container>
 
 <Name>BrickSync</Name>
 
@@ -26,10 +26,6 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
 
 <ExtraSearchTerms>BrickSync BrickLink BrickOwl inventory synchronization</ExtraSearchTerms>
 
-<Requires>Internet access</Requires>
-
-<MinVer>6.12</MinVer>
-
 <License>MIT</License>
 
 <!-- Persistent application data -->
@@ -39,7 +35,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
   Target="/opt/bricksync/data"
   Default="/mnt/user/appdata/bricksync"
   Mode="rw"
-  Description="Persistent BrickSync configuration and data."
+  Description=""
   Type="Path"
   Display="always"
   Required="true"
@@ -53,7 +49,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
   Target="BRICKLINK_CONSUMERKEY"
   Default=""
   Mode="1"
-  Description="BrickLink API Consumer Key."
+  Description=""
   Type="Variable"
   Display="always"
   Required="true"
@@ -65,7 +61,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
   Target="BRICKLINK_CONSUMERSECRET"
   Default=""
   Mode="1"
-  Description="BrickLink API Consumer Secret."
+  Description=""
   Type="Variable"
   Display="always"
   Required="true"
@@ -73,11 +69,11 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
 </Config>
 
 <Config
-  Name="BrickLink Token"
+  Name="BrickLink API Token"
   Target="BRICKLINK_TOKEN"
   Default=""
   Mode="1"
-  Description="BrickLink API Token."
+  Description=""
   Type="Variable"
   Display="always"
   Required="true"
@@ -85,11 +81,11 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
 </Config>
 
 <Config
-  Name="BrickLink Token Secret"
+  Name="BrickLink API Token Secret"
   Target="BRICKLINK_TOKENSECRET"
   Default=""
   Mode="1"
-  Description="BrickLink API Token Secret."
+  Description=""
   Type="Variable"
   Display="always"
   Required="true"
@@ -103,7 +99,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl. This container 
   Target="BRICKOWL_KEY"
   Default=""
   Mode="1"
-  Description="BrickOwl API Key."
+  Description=""
   Type="Variable"
   Display="always"
   Required="true"
