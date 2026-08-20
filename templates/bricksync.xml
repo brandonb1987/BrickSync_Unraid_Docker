@@ -4,7 +4,7 @@
 
 <Repository>brandonb1987/unraid-bricksync:latest</Repository>
 
-<Icon>https://github.com/brandonb1987/BrickSync_Unraid_Docker/main/icon.svg</Icon>
+<Icon>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/7e747d87f0ca31b5f25c6e7b51e57c6e87934427/icon.svg</Icon>
   
 <Network>bridge</Network>
 
