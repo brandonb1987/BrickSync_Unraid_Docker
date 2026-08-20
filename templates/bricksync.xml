@@ -8,7 +8,7 @@
   
 <Network>bridge</Network>
 
-<Shell>bash</Shell>
+<Shell>Shell</Shell>
 
 <Privileged>false</Privileged>
   
