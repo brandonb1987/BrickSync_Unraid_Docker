@@ -50,7 +50,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Type="Variable"
   Display="always"
   Required="true"
-  Mask="true">
+  Mask="false">
 </Config>
 
 <Config
@@ -62,7 +62,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Type="Variable"
   Display="always"
   Required="true"
-  Mask="true">
+  Mask="false">
 </Config>
 
 <Config
@@ -74,7 +74,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Type="Variable"
   Display="always"
   Required="true"
-  Mask="true">
+  Mask="false">
 </Config>
 
 <Config
@@ -86,7 +86,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Type="Variable"
   Display="always"
   Required="true"
-  Mask="true">
+  Mask="false">
 </Config>
 
 <!-- BrickOwl credentials -->
@@ -100,7 +100,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Type="Variable"
   Display="always"
   Required="true"
-  Mask="true">
+  Mask="false">
 </Config>
 
 </Container>
