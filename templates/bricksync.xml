@@ -5,15 +5,16 @@
 <Repository>brandonb1987/unraid-bricksync:latest</Repository>
 
 <Icon>https://raw.githubusercontent.com/brandonb1987/BrickSync_Unraid_Docker/main/icon.jpg</Icon>
-  
+
 <Network>bridge</Network>
 
 <Shell>Shell</Shell>
 
 <Privileged>false</Privileged>
-  
+
 <Overview>
-BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
+BrickSync synchronizes inventory between BrickLink and BrickOwl.
+</Overview>
 
 <Project>https://github.com/ZZJHONS/Bricksync</Project>
 
@@ -32,7 +33,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="/opt/bricksync/data"
   Default="/mnt/user/appdata/bricksync"
   Mode="rw"
-  Description=""
+  Description="Persistent BrickSync configuration and data"
   Type="Path"
   Display="always"
   Required="true"
@@ -46,7 +47,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="BRICKLINK_CONSUMERKEY"
   Default=""
   Mode="1"
-  Description=""
+  Description="BrickLink consumer key"
   Type="Variable"
   Display="always"
   Required="true"
@@ -58,7 +59,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="BRICKLINK_CONSUMERSECRET"
   Default=""
   Mode="1"
-  Description=""
+  Description="BrickLink consumer secret"
   Type="Variable"
   Display="always"
   Required="true"
@@ -70,7 +71,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="BRICKLINK_TOKEN"
   Default=""
   Mode="1"
-  Description=""
+  Description="BrickLink API token"
   Type="Variable"
   Display="always"
   Required="true"
@@ -82,7 +83,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="BRICKLINK_TOKENSECRET"
   Default=""
   Mode="1"
-  Description=""
+  Description="BrickLink API token secret"
   Type="Variable"
   Display="always"
   Required="true"
@@ -96,7 +97,21 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.</Overview>
   Target="BRICKOWL_KEY"
   Default=""
   Mode="1"
-  Description=""
+  Description="BrickOwl API key"
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="false">
+</Config>
+
+<!-- Optional automatic confirmation -->
+
+<Config
+  Name="Auto-confirm empty inventory"
+  Target="BRICKSYNC_AUTO_CONFIRM_EMPTY"
+  Default="false"
+  Mode="1"
+  Description="Set to true only when you intentionally want to approve BrickSync's empty-inventory synchronization prompt automatically. Requires the Docker image to implement the automatic-confirmation wrapper."
   Type="Variable"
   Display="always"
   Required="true"
