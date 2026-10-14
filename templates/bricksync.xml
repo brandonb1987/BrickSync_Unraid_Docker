@@ -8,7 +8,7 @@
 
 <Network>bridge</Network>
 
-<Shell>Shell</Shell>
+<Shell>bash</Shell>
 
 <Privileged>false</Privileged>
 
@@ -104,14 +104,28 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.
   Mask="false">
 </Config>
 
-<!-- Optional automatic confirmation -->
+<!-- Automatic order checking -->
+
+<Config
+  Name="Enable Autocheck"
+  Target="BRICKSYNC_AUTOCHECK"
+  Default="true"
+  Mode="1"
+  Description="Enable BrickSync automatic order checking at startup."
+  Type="Variable"
+  Display="always"
+  Required="true"
+  Mask="false">
+</Config>
+
+<!-- Empty inventory confirmation -->
 
 <Config
   Name="Auto-confirm empty inventory"
   Target="BRICKSYNC_AUTO_CONFIRM_EMPTY"
   Default="false"
   Mode="1"
-  Description="Set to true only when you intentionally want to approve BrickSync's empty-inventory synchronization prompt automatically. Requires the Docker image to implement the automatic-confirmation wrapper."
+  Description="Automatically approve the empty-inventory synchronization prompt only when this is intentional. Requires Docker image support."
   Type="Variable"
   Display="always"
   Required="true"
