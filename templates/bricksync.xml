@@ -125,7 +125,7 @@ BrickSync synchronizes inventory between BrickLink and BrickOwl.
   Target="BRICKSYNC_AUTO_CONFIRM_EMPTY"
   Default="false"
   Mode="1"
-  Description=""
+  Description="Only enable for first time installation, then disable"
   Type="Variable"
   Display="always"
   Required="true"
